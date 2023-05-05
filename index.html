@@ -24,26 +24,26 @@
         <!--Columna central-->
         <div id="central">
             <textarea type="text" id="ingreseTxt" class="fuente" placeholder="Ingrese el texto aqui" rows="10"
-                cols="30"></textarea>
+                cols="20" resize="none"></textarea>
             <div id="contenedorBotones">
                 <div id="textoBottom">
                     <img src="elements/iconoExclamacion.png" alt="iconoExclamacion" id="iconoBottom" />
                     <p class="fuente">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div id="botones">
-                    <span><button class="fuente boton" id="botonEncriptar" style="background: #0a3871; color: #d8dfe8">
+                    <button class="fuente boton" id="botonEncriptar" style="background: #0a3871; color: #d8dfe8">
                             Encriptar
-                        </button></span>
-                    <span><button class="fuente boton" id="botonDesencriptar"
+                        </button>
+                    <button class="fuente boton" id="botonDesencriptar"
                             style="background: #d8dfe8; color: #0a3871">
                             Desencriptar
-                        </button></span>
+                        </button>
                 </div>
             </div>
         </div>
 
         <!--Columna lateral derecha-->
-        <div>
+        <div id="contenedorDerecho">
             <div class="lateral-derecha" id="lateral1">
                 <img src="elements/imagenSearchPeople.png" alt="imagenPersonaBuscando" />
                 <h3 class="fuente" id="mensajeAlerta">
