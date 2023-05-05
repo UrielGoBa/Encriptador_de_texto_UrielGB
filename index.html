@@ -6,30 +6,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Encriptador de texto UrielGB</title>
 </head>
 
 <body>
     <div id="container">
+        <!--Columna lateral izquierda-->
         <div id="lateral-izquierda">
             <img id="logotipoAlura" src="elements/LogoAlura.png" alt="logotipo de aluraLatam" width="30px"
                 height="50" />
         </div>
+
+        <!--Columna central-->
         <div id="central">
-            <h2 id="ingreseTxt" class="fuente">Ingrese el texto aqui</h2>
+            <input type="text" id="ingreseTxt" class="fuente" placeholder="Ingrese el texto aqui" />
             <div id="contenedorBotones">
-                <img src="elements/iconoExclamacion.png" alt="iconoExclamacion" width="16px" />
-                <p class="fuente">Solo letras minúsculas y sin acentos</p>
+                <div id="textoBottom">
+                    <img src="elements/iconoExclamacion.png" alt="iconoExclamacion" id="iconoBottom"/>
+                    <p class="fuente">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div id="botones">
+                <span><button class="fuente boton" id="botonEncriptar" style="background: #0A3871;">Encriptar</button></span>
+                <span><button class="fuente boton" id="botonDesencriptar" style="background: #D8DFE8;">Desencriptar</button></span>
+                </div>
             </div>
         </div>
+
+        <!--Columna lateral derecha-->
         <div id="lateral-derecha">
-            <img src="elements/imagenSearchPeople.png" alt="imagenPersonaBuscando">
-            <h3 class="fuente">Ningún mensaje encontrado</h3>
-            <p class="fuente">Ingresa el texto que desees encriptar o desencriptar</p>
+            <img src="elements/imagenSearchPeople.png" alt="imagenPersonaBuscando" />
+            <h3 class="fuente" id="mensajeAlerta">Ningún mensaje fue encontrado</h3>
+            <p class="fuente" id="mensajeAlerta2">Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
     </div>
 </body>

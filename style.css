@@ -1,49 +1,235 @@
 /*------------------RESETEO DE ESTILOS PREDETERMINADOS POR EL NAVEGADOR-----------------------------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
     background-color: #f2f5fc;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;}
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /*----------------------FIN DEL RESETEO DE ESTILOS PREDETERMINADOS---------------*/
 
-.fuente{
+.fuente {
     font-family: 'Inter', sans-serif;
+}
+
+#container {
+    display: flex;
+}
+
+/*---------------------------ESTILOS DE LAS COLUMNAS---------------------------*/
+
+/*---------------------------------COLUMNA IZQUIERDA---------------------------------*/
+#lateral-izquierda {
+    padding: 40px 0px 86px 40px;
+    flex-basis: 15%;
+}
+
+/*---------------------------------COLUMNA CENTRAL---------------------------------*/
+#central {
+    flex-basis: 55%;
+    display: flex;
+    flex-flow: column;
+    padding-top: 168px;
+    padding-bottom: 72px;
+    justify-content: space-between;
+
+}
+
+#ingreseTxt {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border:0;
+    background-color: transparent;
+    outline: none;
+}
+
+#textoBottom {
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    margin-bottom: 16px;
+}
+
+#iconoBottom {
+    width: 16px;
+    padding-right: 5px;
+}
+
+#botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+}
+
+.boton{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    box-shadow: 5px 24px 32px -8px #00000014;
+}
+.boton:hover{
+    box-shadow: 5px 5px 15px -8px #0a3871;
+    transform: scale(1.001);
+    cursor:pointer;
+}
+
+/*---------------------------------COLUMNA DERECHA---------------------------------*/
+#lateral-derecha {
+    flex-basis: 30%;
+    display: flex;
+    flex-flow: column;
+    background-color: #fff;
+    height: calc(100vh - 100px);
+    margin: 40px 40px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    justify-content: center;
+}
+
+#mensajeAlerta {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+#mensajeAlerta2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
 }
