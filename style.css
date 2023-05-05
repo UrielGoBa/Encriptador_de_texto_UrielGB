@@ -223,12 +223,12 @@ table {
 }
 
 #lateral1{
-    display:none;
 }
 #lateral2{
     justify-content:space-evenly;
-    min-width: 300px;
+    min-width: 336px;
     align-items: center;
+    display:none;
     
 }
 #botonCopiar{
@@ -238,6 +238,10 @@ table {
     border:0;
     background-color: transparent;
     outline: none;
+    font-size: 32px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 #respuesta:hover{
     box-shadow: 0px 24px 32px -8px #00000014;

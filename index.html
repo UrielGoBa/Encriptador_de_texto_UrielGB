@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    
+    
     <title>Encriptador de texto UrielGB</title>
 </head>
 
@@ -31,10 +33,10 @@
                     <p class="fuente">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div id="botones">
-                    <button class="fuente boton" id="botonEncriptar" style="background: #0a3871; color: #d8dfe8">
+                    <button type="button" class="fuente boton" id="botonEncriptar" style="background: #0a3871; color: #d8dfe8">
                             Encriptar
-                        </button>
-                    <button class="fuente boton" id="botonDesencriptar"
+                    </button>
+                    <button type="button" class="fuente boton" id="botonDesencriptar"
                             style="background: #d8dfe8; color: #0a3871">
                             Desencriptar
                         </button>
@@ -55,13 +57,15 @@
             </div>
             <div class="lateral-derecha" id="lateral2">
                 <textarea type="text" class="fuente" id="respuesta" cols="30" rows="35" disabled="true" placeholder="Aqui va el codigo encriptado/desencriptado"></textarea>
-                <span><button class="fuente boton" id="botonCopiar"
+                <span><button type="button" class="fuente boton" id="botonCopiar"
                     style="background: #d8dfe8; color: #0a3871">
                     Copiar
                 </button></span>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="app.js"></script>
+    
 </body>
 
 </html>
