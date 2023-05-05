@@ -39,8 +39,45 @@ function encriptar(){
 
     function copiar(){
         navigator.clipboard.writeText(document.querySelector('#respuesta').value);
+        
     }
 
+/*Funcion para desencriptar*/
+
+function desencriptar(){
+    var textoSecreto = document.querySelector('#ingreseTxt').value;
+    var largoTextoSecreto = textoSecreto.length;
+    var textoAuxiliar2 = [];
+    for (var i = 0; i < largoTextoSecreto; i++){
+        switch (textoSecreto[i]){
+            case 'a':
+                textoAuxiliar2.push(textoSecreto[i]);
+                i++
+                break;
+            case 'e':
+                textoAuxiliar2.push(textoSecreto[i]);
+                i+=4
+                break;
+            case 'i':
+                textoAuxiliar2.push(textoSecreto[i]);
+                i+=3
+                break;
+            case 'o':
+                textoAuxiliar2.push(textoSecreto[i]);
+                i+=3
+                break;
+            case 'u':
+                textoAuxiliar2.push(textoSecreto[i]);
+                i+=3
+                break;
+            default:
+                textoAuxiliar2.push(textoSecreto[i]);
+                break;
+        }
+    }
+    desencriptacion = textoAuxiliar2.join('');
+    document.querySelector('#respuesta').innerHTML = desencriptacion;
+}
 
 /*Evento de escucha del boton "Encriptar"*/
 
@@ -55,3 +92,7 @@ document.querySelector('#ingreseTxt').addEventListener("keyup", function(e) {
 /*Evento de escucha del boton "Copiar"*/
 
 document.querySelector('#botonCopiar').addEventListener("click", copiar)
+
+/*Evento de escucha del boton "Desencriptar"*/
+const boton2 = document.querySelector("#botonDesencriptar");
+boton2.addEventListener("click", desencriptar)

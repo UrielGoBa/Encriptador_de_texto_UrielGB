@@ -222,11 +222,12 @@ table {
     justify-content: center;
 }
 
-#lateral1{
+#lateral1>img{
+    width: 80%;
 }
 #lateral2{
     justify-content:space-evenly;
-    min-width: 336px;
+    min-width: 80%;
     align-items: center;
     display:none;
     
