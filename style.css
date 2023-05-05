@@ -198,6 +198,10 @@ table {
     border-radius: 24px;
     border: 1px solid #0A3871;
     box-shadow: 5px 24px 32px -8px #00000014;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
 }
 .boton:hover{
     box-shadow: 5px 5px 15px -8px #0a3871;
@@ -206,7 +210,7 @@ table {
 }
 
 /*---------------------------------COLUMNA DERECHA---------------------------------*/
-#lateral-derecha {
+.lateral-derecha{
     flex-basis: 30%;
     display: flex;
     flex-flow: column;
@@ -217,7 +221,25 @@ table {
     box-shadow: 0px 24px 32px -8px #00000014;
     justify-content: center;
 }
-
+#lateral1{
+    display:none;
+}
+#lateral2{
+    justify-content:space-evenly;
+    min-width: 300px;
+    align-items: center;
+}
+#botonCopiar{
+    width: 290px;
+}
+#respuesta{
+    border:0;
+    background-color: transparent;
+    outline: none;
+}
+#respuesta:hover{
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
 #mensajeAlerta {
     font-weight: 700;
     font-size: 24px;

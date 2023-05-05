@@ -23,24 +23,43 @@
 
         <!--Columna central-->
         <div id="central">
-            <input type="text" id="ingreseTxt" class="fuente" placeholder="Ingrese el texto aqui" />
+            <textarea type="text" id="ingreseTxt" class="fuente" placeholder="Ingrese el texto aqui" rows="10"
+                cols="30"></textarea>
             <div id="contenedorBotones">
                 <div id="textoBottom">
-                    <img src="elements/iconoExclamacion.png" alt="iconoExclamacion" id="iconoBottom"/>
+                    <img src="elements/iconoExclamacion.png" alt="iconoExclamacion" id="iconoBottom" />
                     <p class="fuente">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div id="botones">
-                <span><button class="fuente boton" id="botonEncriptar" style="background: #0A3871;">Encriptar</button></span>
-                <span><button class="fuente boton" id="botonDesencriptar" style="background: #D8DFE8;">Desencriptar</button></span>
+                    <span><button class="fuente boton" id="botonEncriptar" style="background: #0a3871; color: #d8dfe8">
+                            Encriptar
+                        </button></span>
+                    <span><button class="fuente boton" id="botonDesencriptar"
+                            style="background: #d8dfe8; color: #0a3871">
+                            Desencriptar
+                        </button></span>
                 </div>
             </div>
         </div>
 
         <!--Columna lateral derecha-->
-        <div id="lateral-derecha">
-            <img src="elements/imagenSearchPeople.png" alt="imagenPersonaBuscando" />
-            <h3 class="fuente" id="mensajeAlerta">Ningún mensaje fue encontrado</h3>
-            <p class="fuente" id="mensajeAlerta2">Ingresa el texto que desees encriptar o desencriptar</p>
+        <div>
+            <div class="lateral-derecha" id="lateral1">
+                <img src="elements/imagenSearchPeople.png" alt="imagenPersonaBuscando" />
+                <h3 class="fuente" id="mensajeAlerta">
+                    Ningún mensaje fue encontrado
+                </h3>
+                <p class="fuente" id="mensajeAlerta2">
+                    Ingresa el texto que desees encriptar o desencriptar
+                </p>
+            </div>
+            <div class="lateral-derecha" id="lateral2">
+                <textarea type="text" class="fuente" id="respuesta" cols="30" rows="35" disabled="true" placeholder="Aqui va el codigo encriptado/desencriptado"></textarea>
+                <span><button class="fuente boton" id="botonCopiar"
+                    style="background: #d8dfe8; color: #0a3871">
+                    Copiar
+                </button></span>
+            </div>
         </div>
     </div>
 </body>
